@@ -1,0 +1,87 @@
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: system-ui, sans-serif;
+  text-align: left;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.task-form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 120px;
+}
+
+.task-form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.error {
+  color: #b91c1c;
+  margin-bottom: 1rem;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.task-list li.completed .task-title {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.task-title {
+  font-weight: 600;
+  margin-left: 0.4rem;
+}
+
+.task-desc {
+  margin: 0.4rem 0 0.2rem 1.6rem;
+  color: #374151;
+}
+
+.task-due {
+  margin: 0 0 0.2rem 1.6rem;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.delete-btn {
+  margin-left: 1.6rem;
+  background: none;
+  border: 1px solid #f87171;
+  color: #b91c1c;
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
