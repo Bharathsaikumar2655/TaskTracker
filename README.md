@@ -1,6 +1,6 @@
 # Task Tracker
 
-A small full-stack project to genuinely pick up the stack used in the Frontend Developer (React) role: **React** front end, **ASP.NET Core (C#) Web API** with **Razor Pages**, **SQL Server**, and optional **Azure** deployment.
+A small full-stack project to genuinely pick up the stack used in the Frontend  (React) role: **React** front end, **ASP.NET Core (C#) Web API** with **Razor Pages**, **SQL Server**, and optional **Azure** deployment.
 
 ## Structure
 
@@ -45,8 +45,6 @@ Visit `http://localhost:5173`. The app calls the API to list, add, complete, and
 
 ## 3. (Optional) Deploy to Azure
 
-This step is what lets you genuinely add "Azure" to your CV backed by something real, rather than just the local exposure above.
-
 1. Create a free Azure account if you don't have one (https://azure.microsoft.com/free).
 2. Create an **Azure SQL Database** (free tier available) and copy its connection string into `appsettings.json`.
 3. Create an **Azure App Service** (free F1 tier) and deploy the backend:
@@ -57,15 +55,3 @@ This step is what lets you genuinely add "Azure" to your CV backed by something 
 4. Deploy the React build (`npm run build` output in `frontend/dist`) to **Azure Static Web Apps** (also has a free tier), or to Netlify if you'd rather reuse your existing portfolio setup.
 5. Update `API_BASE_URL` in `frontend/src/api.js` to point at your deployed API URL before rebuilding.
 
-## What this demonstrates for your CV
-
-- **C#** — models, controllers, EF Core queries
-- **ASP.NET Core MVC-style Web API** — `TasksController` with full CRUD
-- **Razor Pages** — `/Admin/Tasks` server-rendered view
-- **SQL Server** — via EF Core and migrations
-- **React** — the task management UI, calling the API
-- **Azure** (if you complete step 3) — live-hosted backend and database
-
-Suggested resume bullet once built and (ideally) deployed:
-
-> Built a full-stack task management application with a React front end and an ASP.NET Core (C#) Web API back end, using Razor Pages for an admin view and SQL Server/Entity Framework Core for data persistence; deployed to Azure App Service and Azure SQL.
